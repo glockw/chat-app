@@ -1,0 +1,18 @@
+<div class="header-container">
+  <img
+    (click)="showHeader = !showHeader"
+    [src]="imageUrl"
+    class="avatar"
+    #avatar
+  />
+  <div class="user-info">
+    <span class="title">{{ userName }}</span>
+    <span [style.color]="'blue'" [innerHTML]="status ? 'online' : ''"></span>
+  </div>
+</div>
+
+<app-header-detail
+  [user]="{ src: avatar.src, name: userName }"
+  *ngIf="showHeader"
+  (closeHeader)="showHeader = false"
+></app-header-detail>

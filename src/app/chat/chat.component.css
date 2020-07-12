@@ -1,0 +1,21 @@
+.chat-container {
+  display: flex;
+  flex-direction:  column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+app-chat-header {
+  order: 0;
+  flex : 0 1 10%;
+}
+
+.content {
+  order: 1;
+  flex: 0 1 70%;
+}
+
+app-chat-footer {
+  order: 2;
+  flex: 0 1 20%;
+}
