@@ -1,0 +1,6 @@
+<div *ngIf="message" class="speech-bubble">
+  <p>
+    {{ message.text }}
+  </p>
+  <label for=""> {{ message.created | date: "shortTime" }}</label>
+</div>

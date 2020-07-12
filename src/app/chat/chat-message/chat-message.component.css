@@ -1,0 +1,36 @@
+.speech-bubble {
+  position: relative;
+  background: #ffffffff;
+  text-align: left;
+  padding: 0.3em;
+  min-width: 300px;
+  display: inline-block;
+  border-radius: 0.4em;
+  margin-bottom:  0.5rem;
+}
+
+p {
+  margin-left: 0.5rem;
+  margin-bottom: 0;
+}
+
+label {
+  color: #757575;
+  float: right;
+  font-size: 0.9rem;
+}
+
+/* .speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 4%;
+	top: 86%;
+	width: 0;
+	height: 0;
+	border: 1.688em solid transparent;
+	border-right-color: #00aabb;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -0.844em;
+	margin-left: -1.687em;
+} */

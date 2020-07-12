@@ -1,8 +1,19 @@
 <div class="footer-container">
-<div class="content">
- <textarea name="" id=""  appRowLength class="form-control chatInput" rows="1"></textarea>
- <img class="send-arrow" [src]="'../../assets/svg/send-arrow.svg'"   alt="send">
-
+  <div class="content">
+    <textarea
+      name=""
+      id=""
+      #txtArea
+      appRowLength
+      (keydown)="enterSubmmit($event, txtArea)"
+      class="form-control chatInput"
+      rows="1"
+    ></textarea>
+    <img
+      (click)="send(txtArea)"
+      class="send-arrow"
+      [src]="'../../assets/svg/send-arrow.svg'"
+      alt="send"
+    />
+  </div>
 </div>
-</div>
-
