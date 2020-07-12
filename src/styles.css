@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+  aapp-navbar,
+  app-chat
+  {
+    flex: unset;
+    width: 100%;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row wrap;
+}
+
+app-navbar {
+  order: 0;
+  flex: 0 1 30%;
+  border-right:  solid  2px;
+  min-height: 500 px;
+  background: #d3d3d3d3;
+  box-shadow: 3px 0 5px -1px #dddddd
+}
+
+app-chat {
+  order:1;
+  background: rgb(173,216,230);
+  flex: 0 1 70%;
+}
