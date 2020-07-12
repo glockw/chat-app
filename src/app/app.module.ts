@@ -9,6 +9,7 @@ import { ChatHeaderComponent } from './chat/chat-header/chat-header.component';
 import { HeaderDetailComponent } from './chat/chat-header/header-detail/header-detail.component';
 import { ChatFooterComponent } from './chat/chat-footer/chat-footer.component';
 import { RowLengthDirective } from './shared/row-length.directive';
+import { ChatMessageComponent } from './chat/chat-message/chat-message.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RowLengthDirective } from './shared/row-length.directive';
     ChatHeaderComponent,
     HeaderDetailComponent,
     ChatFooterComponent,
-    RowLengthDirective
+    RowLengthDirective,
+    ChatMessageComponent
   ],
   imports: [
     BrowserModule,

@@ -5,8 +5,9 @@ import { Directive, HostBinding, HostListener, ElementRef } from '@angular/core'
 })
 export class RowLengthDirective {
 defaultHeigth:string;
-@HostListener('keyup')
-checkInput(){
+@HostListener('keydown')
+checkInput(target){
+
 const element = this.element.nativeElement;
 if(element.value.length < 10){
   element.style.height = this.defaultHeigth;
