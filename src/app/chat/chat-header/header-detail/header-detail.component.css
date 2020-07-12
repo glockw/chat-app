@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   padding: 30px;
-  justify-content: start;
+  justify-content: flex-start;
   background:  rgba(179, 177, 177, 0.75);
   z-index: 30;
 }
