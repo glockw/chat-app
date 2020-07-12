@@ -14,12 +14,14 @@
 
 .chatInput {
   order: 0;
-  flex: 0 1 80%;
+  flex: 0 1 90%;
+  box-sizing: border-box;
+  padding: 10px;
   font-size: 1.3rem;
   margin:  2vh;
   resize: none;
   overflow: hidden;
-  border: 1px solid #888;
+  border: none;
   border-radius: 15px;
   max-height: 300px;
   overflow-y: scroll;
@@ -28,4 +30,7 @@
 .none {
   background: blue;
   width: 100%;
+}
+.send-arrow {
+  
 }
