@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {ReactiveFormsModule} from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { HeaderDetailComponent } from './chat/chat-header/header-detail/header-d
 import { ChatFooterComponent } from './chat/chat-footer/chat-footer.component';
 import { RowLengthDirective } from './shared/row-length.directive';
 import { ChatMessageComponent } from './chat/chat-message/chat-message.component';
+import { ChatContainerComponent } from './chat/chat-container/chat-container.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { ChatMessageComponent } from './chat/chat-message/chat-message.component
     HeaderDetailComponent,
     ChatFooterComponent,
     RowLengthDirective,
-    ChatMessageComponent
+    ChatMessageComponent,
+    ChatContainerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

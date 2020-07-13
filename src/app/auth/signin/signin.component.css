@@ -1,0 +1,23 @@
+.backdrop{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.login-container {
+  position: fixed;
+  top: 10vh;
+  border-radius: 13rem;
+  left:33vw;
+  background: white;
+  width:  33vw;
+  padding:16px;
+  z-index: 20;
+}
+
+.row  {
+  width: 100%;
+}
